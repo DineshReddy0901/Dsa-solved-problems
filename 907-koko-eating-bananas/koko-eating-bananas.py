@@ -8,12 +8,12 @@ class Solution(object):
             hours = 0
 
             for p in piles:
-                hours += (p + mid - 1) // mid   # ceil(p / mid)
+                hours += (p + mid - 1) // mid  
 
             if hours <= h:
-                right = mid - 1   # try smaller speed
+                right = mid - 1  
             else:
-                left = mid + 1    # need bigger speed
+                left = mid + 1    
 
         return left
 
