@@ -14,6 +14,7 @@ class Solution(object):
                 open_2+=1
             if open_2 < 0:
                 return False
+            
             if open_1 < 0:
                 open_1 = 0
         return open_1 ==0
