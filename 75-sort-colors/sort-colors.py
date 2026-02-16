@@ -1,7 +1,5 @@
 class Solution(object):
     def sortColors(self, nums):
-        # nums.sort()
-        # return nums
         left =0
         mid=0
         right=len(nums)-1
