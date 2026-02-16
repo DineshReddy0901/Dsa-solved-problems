@@ -13,7 +13,7 @@ class Solution(object):
             else:
                 nums[mid],nums[right]=nums[right],nums[mid]
                 right-=1
-        return nums
+    
 
 
 
