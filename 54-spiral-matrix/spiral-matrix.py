@@ -2,8 +2,7 @@ class Solution(object):
     def spiralOrder(self, matrix):
         
         result  = []
-        if not matrix:
-            return result
+        
         top = 0
         bottom  = len(matrix) -1
         left = 0
