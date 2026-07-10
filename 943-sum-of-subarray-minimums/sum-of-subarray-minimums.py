@@ -36,8 +36,8 @@ class Solution:
         ans = 0
 
         for i in range(n):
-            ans = (ans + arr[i] * left[i] * right[i]) % MOD
+            ans += arr[i] * left[i] * right[i]
 
-        return ans
+        return ans%MOD
         
         
