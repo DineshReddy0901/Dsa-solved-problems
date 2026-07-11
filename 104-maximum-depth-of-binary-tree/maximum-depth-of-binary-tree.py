@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution(object):
     def maxDepth(self, root):
-        ans = 0
+        
         if root is None:
             return 0
         left_depth = self.maxDepth(root.left)
