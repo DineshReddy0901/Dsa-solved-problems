@@ -11,5 +11,5 @@ class Solution(object):
             return 0
         left_depth = self.maxDepth(root.left)
         right_depth = self.maxDepth(root.right)
-        ans = 1+ max(left_depth,right_depth)
-        return ans
+        return 1+ max(left_depth,right_depth)
+        
