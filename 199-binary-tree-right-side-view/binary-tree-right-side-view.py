@@ -7,6 +7,7 @@
 class Solution(object):
     def rightSideView(self, root):
         nested_res = []
+        res_la = []
         def rightView(node,level):
             if not node:
                 return 0
@@ -16,8 +17,11 @@ class Solution(object):
             rightView(node.left,level+1)
             rightView(node.right,level+1)
         rightView(root,0)
-        return [res[-1] for res in nested_res]
+        for res in nested_res:
+            res_la.append(res[-1])
 
+        return res_la
 
+        # return [res[-1] for res in nested_res]
     
         
