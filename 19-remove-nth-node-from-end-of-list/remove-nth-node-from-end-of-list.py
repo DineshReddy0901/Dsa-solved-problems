@@ -11,9 +11,9 @@ class Solution(object):
         fast = dummy
         if not head.next and n==1:
             return 
-        for _ in range(n+1):
+        for _ in range(n):
             fast = fast.next
-        while fast:
+        while fast.next:
             slow=slow.next
             fast = fast.next
         slow.next = slow.next.next
